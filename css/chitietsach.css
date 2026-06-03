@@ -1,0 +1,620 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.modal-backdrop.show {
+  opacity: 0.7;
+  backdrop-filter: blur(8px);
+}
+
+#modalId .modal-content {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  box-shadow: none;
+}
+
+#modalId .modal-header,
+#modalId .modal-footer {
+  background-color: rgba(39, 110, 77, 0.8) !important;
+  border: none;
+}
+
+#modalId .carousel-inner {
+  background-color: transparent !important;
+}
+
+/* body {
+  background-color: #f4f4f4;
+} */
+
+/* .container {
+  gap: 5px;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 100px 100vh 100px;
+  grid-template-columns: 1fr 300px;
+  grid-template-areas:
+    "header header"
+    "section section"
+    "footer footer";
+} */
+body {
+  background-color: #f4f4f4;
+}
+
+.custom-header {
+  /* background-image: linear-gradient(135deg, #0C7779,#a8e6e2, #0C7779, #a8e6e2); */
+  background: #60c3c4;
+  background: radial-gradient(circle, rgba(96, 195, 196, 1) 0%, rgba(72, 156, 156, 1) 50%, rgba(13, 98, 105, 1) 100%);
+  /* background-color: #C22232; */
+  border-radius: 0 0 10px 10px;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: rgb(214, 212, 212);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+.container section {
+  grid-area: section;
+  /* border: 1px solid red; */
+}
+
+/* .container aside {
+  grid-area: aside;
+  border: 1px solid red;
+  gap: 10px;
+  display: grid;
+} */
+/* 
+.container footer {
+  grid-area: footer;
+  background: linear-gradient(135deg, #061e29, #0c7779, #427a76, #005461);
+} */
+
+/* làm phần nào thì ctrl x lôi nó xuống đây r làm nha mn */
+
+/* cái border đỏ để mn nhìn thấy phần để dội dung, k cần thiết thì xóa đi cũng đc */
+
+/* sửa phần nào của bài gốc thì đóng nó lại r sử ở dưới nha 
+vd:
+*/
+/* .container aside{
+    grid-area: aside;
+    border: 1px solid red;
+    gap: 5px;
+    gap: 10px;
+    display: grid;
+
+} */
+
+.clear {
+  clear: both;
+}
+
+body {
+  background-color: #f0f0f0;
+  /* font-family: sans-serif;
+   */
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+/* Sach 1 */
+
+.left-col {
+  height: max-content;
+  position: sticky;
+  top: 112px;
+  z-index: 10;
+}
+
+.left-col,
+.first-par,
+.second-par,
+.third-par,
+.four-par {
+  background-color: white;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.left-col a {
+  text-decoration: none;
+  /* margin-left: 30px; */
+}
+
+/* .left-col {
+  height: 780px;
+  position: sticky;
+  top: 112px;
+} */
+
+/* Phan list sach */
+.list-img-book ul li a img {
+  height: 60px;
+  width: 50px;
+}
+
+.list-img-book ul li {
+  display: inline-block;
+  height: 72px;
+  width: 72px;
+  padding-left: 8px;
+  padding-right: 5px;
+  vertical-align: middle;
+  padding-top: 4px;
+}
+
+.list-img-book ul li:hover {
+  display: inline-block;
+  border: 2px solid #2489f4;
+  border-radius: 10px;
+}
+
+.list-img-book ul li .more-list {
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: x-large;
+  color: white;
+}
+
+/*  */
+/* left col, list img */
+
+.after-imgBook a {
+  color: black;
+  display: flex;
+  align-items: flex-start;
+  text-decoration: none;
+}
+
+/* Icon không bi bop meo khi dai */
+.after-imgBook a img {
+  width: 25px;
+  flex-shrink: 0;
+}
+
+.btn-product {
+  border-spacing: 15px;
+  margin-top: 15px;
+  margin: 0 auto;
+}
+
+.btn-product > a {
+  color: black;
+}
+
+.btn-themgiohang {
+  background-color: white;
+  border: 2px solid #c92127;
+  border-radius: 5px;
+  color: #c92127;
+  padding: 10px;
+  width: 192px;
+}
+
+.btn-muangay {
+  background-color: #c92127;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  width: 192px;
+}
+
+.after-imgBook a {
+  color: black;
+}
+
+/* right col */
+/* first par */
+.first-par > .nhaCungCap > .left-par {
+  float: left;
+  width: 50%;
+}
+
+.first-par > .nhaCungCap > .right-par {
+  float: left;
+  width: 50%;
+}
+
+.first-par {
+  padding: 15px;
+}
+
+/* second par */
+.second-par {
+  padding: 15px;
+}
+
+.giamGia {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  font-size: 0;
+}
+
+.giamGia li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 5px 10px;
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.giamGia li img {
+  width: 25px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.giamGia li button {
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  vertical-align: middle;
+  padding: 0;
+}
+
+/* Phan par3 */
+.third-par {
+  padding: 15px;
+}
+
+.third-par > table,
+tr,
+td {
+  padding: 10px;
+}
+
+.thongTinChiTiet {
+  width: 80%;
+  border-collapse: collapse;
+}
+
+.thongTinChiTiet tr {
+  border-bottom: 0.7px solid rgb(163, 162, 162, 0.2);
+}
+
+.four-par,
+.nhom-noiDung > .tieuDe {
+  border-bottom: 1px solid rgb(173, 172, 172, 0.6);
+  margin-bottom: 15px;
+}
+
+.four-par,
+.nhom-noiDung > p {
+  margin-bottom: 15px;
+  color: #3c3c3c;
+}
+
+.description-content {
+  max-height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.description-content.collapsed::after {
+  content: "";
+  height: 150px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(transparent, rgba(255, 255, 255, 0.9));
+}
+
+.description-content.expanded {
+  max-height: 2000px;
+}
+
+.show-more-wrapper {
+  background: none;
+  text-align: center;
+}
+
+#toggleBtn {
+  color: #2489f4;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* ---------------- TABLET (≤ 1024px) ---------------- */
+@media screen and (max-width: 1024px) {
+  .logo {
+    margin-right: 60px;
+    font-size: x-large;
+  }
+
+  .search-box input {
+    width: 140px;
+  }
+
+  /* Chia cột dọc 1 cột */
+  section.row {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  /* Cot trai 100% width*/
+  .left-col {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    position: static;
+    height: auto;
+  }
+
+  .right-col {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    position: static;
+    height: auto;
+    /* Co dan mep ngoai */
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Cot trai va nut bia can giua */
+  .left-col > div:first-child {
+    text-align: center;
+  }
+  .left-col > div:first-child img {
+    width: 300px !important; /* tren tablet to hon mobile */
+    height: 300px !important;
+    margin-top: 15px !important;
+  }
+
+  /* Danh sách ảnh nhỏ */
+  .list-img-book ul {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+  }
+
+  /* Nút thêm giỏ hàng mua ngay xếp dọc */
+  .btn-product {
+    width: 100%;
+    border-spacing: 8px;
+  }
+  .btn-product tr {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .btn-product td {
+    display: block;
+    width: 100%;
+  }
+  .btn-themgiohang,
+  .btn-muangay {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  /* Chính sách xếp dọc gọn gàng */
+  .after-imgBook {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .after-imgBook a {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+
+  /* Cot phai xep doc */
+  .first-par > .nhaCungCap > .left-par,
+  .first-par > .nhaCungCap > .right-par {
+    float: none;
+    width: 100%;
+  }
+
+  /* Ma giam gia cuon ngang */
+  .giamGia {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 5px;
+  }
+  .giamGia li {
+    flex-shrink: 0;
+  }
+
+  .thongTinChiTiet {
+    width: 100%;
+  }
+}
+
+/* ----------------- MOBILE (≤ 768px) ----------------- */
+@media screen and (max-width: 768px) {
+  /* Bo sticky cot trai */
+  .left-col {
+    position: static;
+    height: auto;
+  }
+
+  /* Kich thuoc anh bia */
+  .left-col > div:first-child img {
+    width: 220px !important;
+    height: 220px !important;
+    margin-top: 15px !important;
+  }
+
+  /* List anh nho */
+  .list-img-book ul {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 0 5px;
+  }
+
+  .list-img-book ul li {
+    margin: 0;
+  }
+
+  /* Hai nut mua hang gio hang */
+  .btn-product {
+    width: 100%;
+    border-spacing: 8px;
+  }
+
+  .btn-product tr {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .btn-product td {
+    display: block;
+    width: 100%;
+  }
+
+  .btn-themgiohang,
+  .btn-muangay {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  /* Chinh sach */
+  .after-imgBook {
+    margin-left: 0;
+    padding: 10px 5px;
+    font-size: 12px;
+  }
+
+  .after-imgBook a {
+    display: block;
+    margin-bottom: 8px;
+    line-height: 1.6;
+  }
+
+  /* 1 cot nha cung cap */
+  .first-par > .nhaCungCap > .left-par,
+  .first-par > .nhaCungCap > .right-par {
+    float: none;
+    width: 100%;
+  }
+
+  /* Giá */
+  .first-par span[style*="font-size: 36px"] {
+    font-size: 28px !important;
+  }
+
+  /* Mã giảm giá cuộn ngang */
+  .giamGia {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 5px;
+    font-size: 13px;
+  }
+
+  .giamGia li {
+    flex-shrink: 0;
+    margin-bottom: 0;
+  }
+
+  /* Số lượng */
+  h3[style*="width: 5%"] {
+    width: auto !important;
+    float: none !important;
+    margin-bottom: 8px;
+  }
+
+  .soLuong {
+    float: none !important;
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .soLuong input {
+    flex: 1;
+    max-width: 80px;
+  }
+
+  /* Bảng thông tin chi tiết */
+  .thongTinChiTiet {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  /* Mô tả sản phẩm */
+  .four-par .nhom-noiDung > .tieuDe {
+    font-size: large;
+  }
+
+  /* Footer */
+  .container footer {
+    padding: 16px;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+/* ---------------- MOBILE NHỎ (≤ 375px) ---------------- */
+@media screen and (max-width: 375px) {
+  .left-col > div:first-child img {
+    width: 180px !important;
+    height: 180px !important;
+  }
+
+  .list-img-book ul li {
+    width: 60px;
+    height: 60px;
+  }
+
+  .list-img-book ul li a img {
+    width: 42px;
+    height: 50px;
+  }
+
+  .thongTinChiTiet td {
+    padding: 7px 5px;
+  }
+}

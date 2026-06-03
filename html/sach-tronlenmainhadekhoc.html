@@ -1,0 +1,1178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trốn Lên Mái Nhà Để Khóc</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/all.min.css" />
+  <link rel="stylesheet" href="../css/header.footer.css" />
+  <link rel="stylesheet" href="../css/chitietsach.css" />
+  <style></style>
+</head>
+
+<body>
+  <header class="custom-header sticky-top shadow-sm py-2 mb-4">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl navbar-dark">
+                <a class="navbar-brand fw-bold fs-2 me-4" href="../html/home.html">
+                    <span style="color: black; font-family: 'Dancing Script', cursive;">BookShop</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button">
+                                <i class="fa-solid fa-bars me-1"></i> <span>DANH MỤC</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">VĂN HỌC</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="menu-tieuthuyet.html">Tiểu thuyết</a></li>
+                                        <li><a class="dropdown-item" href="menu-truyenngan-tanvan.html">Truyện ngắn -
+                                                Tản văn</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">TÂM LÝ - KỸ NĂNG</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="menu-kynangsong.html">Kỹ năng sống</a></li>
+                                        <li><a class="dropdown-item" href="menu-tamly.html">Tâm lý học</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">NUÔI DẠY CON</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="menu-camnangchame.html">Cẩm nang cha mẹ</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="menu-giaoductre.html">Giáo dục trẻ</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">SÁCH THIẾU NHI</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="menu-manga-comic.html">Manga - Comic</a></li>
+                                        <li><a class="dropdown-item" href="menu-kienthucbachkhoa.html">Kiến thức bách
+                                                khoa</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">TIỂU SỬ - HỒI KÝ</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="menu-cauchuyencuocdoi.html">Câu chuyện cuộc
+                                                đời</a></li>
+                                        <li><a class="dropdown-item" href="menu-lichsu.html">Lịch Sử</a></li>
+                                    </ul>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex mx-auto w-50 my-2 my-xl-0">
+                        <div class="input-group">
+                            <input class="form-control" type="search" placeholder="Thể loại, Sách, Tác giả..."
+                                aria-label="Search">
+                            <button class="btn btn-light" type="submit border">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </form>
+
+                    <div id="auth-section"
+                        class="d-flex align-items-center gap-3 ms-xl-4 text-white justify-content-center">
+                        <a href="../html/cart.html"
+                            class="btn btn-outline-light d-flex align-items-center gap-2 border-0 ">
+                            <span>Giỏ Hàng</span>
+                            <i class="fa-solid fa-cart-shopping fs-5"></i>
+                        </a>
+                        <a href="../html/login_register.html" id="user-link"
+                            class="btn btn-outline-light d-flex align-items-center gap-2 border-0">
+                            <span>Đăng Nhập</span>
+                            <i class="fa-solid fa-user fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+  <!-- container o day -->
+  <div class="container mt-4 mb-5">
+    <section class="row">
+      <article class="col-lg-4 col-md-5 left-col">
+        <div style="text-align: center">
+          <img id="product-img" style="margin-top: 20px; width: 379px; height: 379px"
+            src="../img/img-tronlenmainhadekhoc/bia.png" alt="" />
+        </div>
+        <div style="padding-left: 31px" class="list-img-book">
+          <ul>
+            <li>
+              <a data-bs-toggle="modal" data-bs-target="#modalId" href=""><img
+                  src="../img/img-tronlenmainhadekhoc/slide/slide1.png" alt="" /></a>
+            </li>
+            <li>
+              <a data-bs-toggle="modal" data-bs-target="#modalId" href=""><img
+                  src="../img/img-tronlenmainhadekhoc/slide/slide2.png" alt="" /></a>
+            </li>
+            <li>
+              <a data-bs-toggle="modal" data-bs-target="#modalId" href=""><img
+                  src="../img/img-tronlenmainhadekhoc/slide/slide3.png" alt="" /></a>
+            </li>
+            <li>
+              <a data-bs-toggle="modal" data-bs-target="#modalId" href=""><img
+                  src="../img/img-tronlenmainhadekhoc/slide/slide4.png" alt="" /></a>
+            </li>
+            <li>
+              <a data-bs-toggle="modal" data-bs-target="#modalId" href=""><img
+                  src="../img/img-tronlenmainhadekhoc/slide/slide5.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+        <table class="btn-product">
+          <tr>
+            <td class="text-center">
+              <button class="btn-themgiohang" style="padding-top: 8px; padding-bottom: 8px; cursor: pointer">🛒 Thêm vào
+                giỏ hàng</button>
+            </td>
+            <td class="text-center" style="justify-content: center">
+              <button class="btn-muangay btn btn-danger" style="height: 41.2px; cursor: pointer">Mua ngay</button>
+            </td>
+          </tr>
+        </table>
+        <div class="after-imgBook">
+          <h4 class="ps-2">Chính sách ưu đãi</h4>
+          <a href=""><img style="width: 25px" src="../img/img-icon/ico_truck_v2.png" alt="" /><strong>Thời
+              gian giao hàng:</strong>
+            Giao nhanh va uy tín
+          </a>
+          <br />
+          <a href=""><img style="width: 25px" src="../img/img-icon/ico_transfer_v2.png" alt="" /><strong>Chính sách đổi
+              trả:</strong>
+            Đổi trả miễn phí toàn quốc
+          </a>
+          <br />
+          <a href=""><img style="width: 25px" src="../img/img-icon/ico_shop_v2.png" alt="" /><strong>Chính
+              sách khách sỉ:</strong>
+            Ưu đãi khi mua số luợng lớn
+          </a>
+        </div>
+      </article>
+
+      <article class="col-lg-8 col-md-7 right-col">
+        <div class="first-par">
+          <img style="float: left; width: 20%; width: 97px" src="../img/img-icon/ico_trending.svg" alt="" />
+          <h2 style="float: left; width: 80%; margin-bottom: 20px" id="book-name">Trốn Lên Mái Nhà Để Khóc</h2>
+          <div class="clear"></div>
+          <div class="nhaCungCap">
+            <div class="left-par">
+              <p>Nhà cung cấp: <span style="color: #4996f4">Skybooks</span></p>
+              <p>Nhà xuất bản: Dân Trí</p>
+            </div>
+
+            <div class="right-par">
+              <p>Tác giả: <strong>Lam</strong></p>
+              <p>Hình thức bìa: <strong>Bìa Mềm</strong></p>
+            </div>
+
+            <div>
+              <p>⭐⭐⭐⭐ ☆ (1 đánh giá) | Đã bán 3.6k</p>
+              <p style="margin-bottom: 20px">
+                <span style="font-size: 36px; color: #c92127" id="book-price">76.000</span><span
+                  style="font-size: 36px; color: #c92127">đ</span>
+                <span style="color: #a1a1a1; text-decoration: line-through">95.000</span><span
+                  style="color: #a1a1a1; text-decoration: line-through">đ</span>
+                <span style="background-color: #c92127; color: white; padding: 3px; border-radius: 5px">-20%</span>
+              </p>
+            </div>
+          </div>
+
+          <div style="background-color: #e8f3fe; color: #5ca2f5; padding: 8px; border-radius: 8px">115 nhà sách còn hàng
+          </div>
+        </div>
+        <div class="second-par">
+          <h3 style="margin-bottom: 20px">Thông tin vận chuyển</h3>
+          <a style="color: black; text-decoration: none" href="">Giao hàng đến <strong>Phường Bến Nghé, Quận 1, Hồ Chí
+              Minh</strong> &nbsp; <span style="color: #4996f4">Thay đổi</span></a>
+          <p>
+            <img style="width: 25px" src="../img/img-icon/ico-delivery-green.png" alt="" />
+            <strong>Giao hàng tiêu chuẩn</strong>
+          </p>
+          <p>Dự kiến giao Thứ năm - 30/05</p>
+          <h3 class="h5" style="float: left; width: 30%">Ưu đãi liên quan</h3>
+          <a style="float: left; width: 70%; text-decoration: none; color: #4996f4" href="">Xem thêm ></a>
+          <div class="clear"></div>
+          <ul class="giamGia">
+            <li>
+              <img src="../img/img-icon/maGiamGia1.png" alt="" />
+              <button>Mã giảm giá 10k</button>
+            </li>
+            <li><img src="../img/img-icon/ico-delivery-green.png" alt="" /><button>Mã giảm giá 20k</button>
+            </li>
+            <li><img src="../img/img-icon/shopeePay.png" alt="" /><button>Shopeepay: giảm 20k</button></li>
+          </ul>
+          <h3 class="h5" style="float: left; width: 20%">Số lượng:</h3>
+
+          <div class="input-group" style="max-width: 130px">
+            <button class="btn btn-light border" type="button" id="btn-minus">-</button>
+
+            <input type="text" class="form-control text-center border" id="quantity-input" value="1" min="1" />
+
+            <button class="btn btn-light border" type="button" id="btn-plus">+</button>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="third-par">
+          <h3>Thông tin chi tiết</h3>
+          <table class="thongTinChiTiet">
+            <tr>
+              <td>Mã hàng</td>
+              <td>8935325015984</td>
+            </tr>
+            <tr>
+              <td>Tên Nhà Cung Cấp</td>
+              <td style="color: #4996f4">Skybooks</td>
+            </tr>
+            <tr>
+              <td>Tác giả</td>
+              <td>Lam</td>
+            </tr>
+            <tr>
+              <td>NXB</td>
+              <td>Dân Trí</td>
+            </tr>
+            <tr>
+              <td>Năm XB</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Trọng lượng (gr)</td>
+              <td>220</td>
+            </tr>
+            <tr>
+              <td>Kích Thước Bao Bì</td>
+              <td>20 x 12 x 1 cm</td>
+            </tr>
+            <tr>
+              <td>Số trang</td>
+              <td>208</td>
+            </tr>
+            <tr style="border: none">
+              <td>Hình thức</td>
+              <td>Bìa Mềm</td>
+            </tr>
+          </table>
+          <p>
+            Sản phầm bán chạy nhất
+            <a style="text-decoration: none; color: #4996f4" href="">Top 100 sản phẩm Truyện ngắn - Tản văn bán chạy của
+              tháng</a>
+          </p>
+        </div>
+        <div class="four-par">
+          <h3 style="margin-bottom: 20px">Mô tả sản phẩm</h3>
+          <div class="description-content" id="descContent">
+            <div class="nhom-noiDung">
+              <h2 class="tieuDe h4">TRỐN LÊN MÁI NHÀ ĐỂ KHÓC - NƠI CẢM XÚC ĐƯỢC BUÔNG LỎNG, KÝ ỨC ĐƯỢC CẤT LỜI</h2>
+              <p class="noiDung" style="margin-bottom: 40px">"Có những ngày chẳng ai hiểu mình, chẳng ai cần mình, chẳng
+                ai thương mình. Và những ngày đó, mái nhà là nơi duy nhất tôi thấy an toàn."</p>
+            </div>
+
+            <div class="nhom-noiDung">
+              <h2 class="tieuDe h4">VỀ TÁC GIẢ: Lam</h2>
+              <p>Tác giả trẻ, nổi bật với lối viết tinh tế, giàu cảm xúc.</p>
+              <p>Chuyên viết về tuổi thơ, ký ức, nỗi buồn và hành trình trưởng thành.</p>
+              <p>Ngôn từ nhẹ nhàng nhưng chạm sâu vào tâm hồn độc giả.</p>
+              <p>"Trốn Lên Mái Nhà Để Khóc" là nơi để những tâm hồn lạc lõng tìm thấy sự đồng điệu.</p>
+            </div>
+
+            <div class="nhom-noiDung">
+              <h2 class="tieuDe h4">TÓM TẮT NỘI DUNG SÁCH</h2>
+              <p>Mái nhà – nơi cao nhất trong căn nhà nhưng lại là nơi sâu nhất trong tâm hồn một đứa trẻ. Ở đó, Lam đã
+                lắng nghe nhịp thở của quá khứ, nơi có giọng nói của mẹ, bàn tay của bà, những ký ức đẹp đẽ xen lẫn
+                những nỗi đau khó gọi tên.</p>
+              <p>
+                "Lớn lên, tôi nhận ra mái nhà không phải nơi trú ẩn, mà là nơi để chuẩn bị cho những hành trình tiếp
+                theo. Nhưng đôi khi, tôi vẫn muốn trốn lên đó, để được khóc mà không ai nhìn thấy."
+              </p>
+              <p>Cuốn sách là những dòng tâm sự chân thật, một hành trình quay về thời thơ ấu để tìm kiếm chính mình.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="show-more-wrapper">
+            <button id="toggleBtn" onclick="toggleDescription()">Xem thêm</button>
+          </div>
+        </div>
+      </article>
+    </section>
+    <div class="row mt-3 ">
+      <div class="col-md-12 col-lg-12">
+        <article style="border-radius: 11px; overflow: hidden;" class="bg-white shadow-sm fifth-col ">
+          <div class="bg-dark text-white p-3 rounded-top" style="background: linear-gradient(90deg, #1a2e1b, #16213e)">
+            <h3 class="m-0 fs-5 fw-bold">Bảng xếp hạng bán chạy tuần</h3>
+          </div>
+
+          <!-- Phan navtabs -->
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="vanhoc-tab" data-bs-toggle="tab" data-bs-target="#vanhoc"
+                type="button" role="tab" aria-controls="vanhoc" aria-selected="true">Văn học</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tamlykynang-tab" data-bs-toggle="tab" data-bs-target="#tamlykynang"
+                type="button" role="tab" aria-controls="tamlykynang" aria-selected="false">Tâm lý - kỹ năng</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="nuoidaycon-tab" data-bs-toggle="tab" data-bs-target="#nuoidaycon"
+                type="button" role="tab" aria-controls="nuoidaycon" aria-selected="false">Nuôi dạy con</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="sachthieunhi-tab" data-bs-toggle="tab" data-bs-target="#sachthieunhi"
+                type="button" role="tab" aria-controls="sachthieunhi" aria-selected="false">Sách thiếu nhi</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tieusuhoiky-tab" data-bs-toggle="tab" data-bs-target="#tieusuhoiky"
+                type="button" role="tab" aria-controls="tieusuhoiky" aria-selected="false">Tiểu sử - hồi ký</button>
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="vanhoc" role="tabpanel" aria-labelledby="vanhoc-tab">
+              <!-- Tab Van hoc -->
+              <div class="p-3 p-md-4">
+                <div class="row">
+                  <div class="col-12 col-lg-6">
+                    <!-- Top 1 -->
+                    <a href="../html/sach-hodiepvakinhngu.html"
+                      class="d-flex align-items-center mb-2 pb-2 border-bottom text-decoration-none">
+                      <div class="text-center me-3" style="width: 30px">
+                        <span class="fw-bold fs-5">01</span><br />
+                        <i class="fa-solid fa-arrow-up text-success"></i>
+                      </div>
+                      <img src="../img/img-hodiepvakinhngu/bia.webp" alt="Sách 1" class="me-3"
+                        style="width: 60px; height: auto; object-fit: cover;" />
+                      <div>
+                        <h6 class="mb-1 text-dark">Hồ Điệp Và Kình Ngư</h6>
+                        <small class="text-muted d-block">Tuế Kiến</small>
+                        <small class="text-info">2363 điểm</small>
+                      </div>
+                    </a>
+                    <!-- Top 2 -->
+                    <a href="../html/sach-neubiettramnamlahuuhan.html"
+                      class="d-flex align-items-center mb-2 pb-2 border-bottom text-decoration-none">
+                      <div class="text-center me-3" style="width: 30px">
+                        <span class="fw-bold fs-5">02</span><br />
+                        <i class="fa-solid fa-arrow-up text-success"></i>
+                      </div>
+                      <img src="../img/img-neubiettramnamlahuuhan/bia.png" alt="Sách 4" class="me-3"
+                        style="width: 60px; height: auto; object-fit: cover;" />
+                      <div>
+                        <h6 class="mb-1 text-dark">Nếu Biết Trăm Năm Là Hữu Hạn</h6>
+                        <small class="text-muted d-block">Phạm Lữ Ân</small>
+                        <small class="text-info">2076 điểm</small>
+                      </div>
+                    </a>
+                    <!-- Top 3 -->
+                    <a href="../html/sach-truongcaachiless.html"
+                      class="d-flex align-items-center mb-2 pb-2 border-bottom text-decoration-none">
+                      <div class="text-center me-3" style="width: 30px">
+                        <span class="fw-bold fs-5">03</span><br />
+                        <i class="fa-solid fa-arrow-up text-success"></i>
+                      </div>
+                      <img src="../img/img-truongcaachiles/bia.png" alt="Sách 3" class="me-3"
+                        style="width: 60px; height: auto; object-fit: cover;" />
+                      <div>
+                        <h6 class="mb-1 text-dark">Trường Ca ACHILLES</h6>
+                        <small class="text-muted d-block">Madeline Miller</small>
+                        <small class="text-info">2112 điểm</small>
+                      </div>
+                    </a>
+                    <!-- Top 4  -->
+                    <a href="../html/sach-cobehangxomvabonvienkeo.html"
+                      class="d-flex align-items-center mb-2 pb-2 border-bottom text-decoration-none">
+                      <div class="text-center me-3" style="width: 30px">
+                        <span class="fw-bold fs-5">04</span><br />
+                        <i class="fa-solid fa-arrow-up text-success"></i>
+                      </div>
+                      <img src="../img/img-cobehangxomva4vienkeo/bia.png" alt="Sách 5" class="me-3"
+                        style="width: 60px; height: auto; object-fit: cover;" />
+                      <div>
+                        <h6 class="mb-1 text-dark">Cô Gái Hàng Xóm Và Bốn Viên Kẹo</h6>
+                        <small class="text-muted d-block">Nguyễn Nhật Ánh</small>
+                        <small class="text-info">2057 điểm</small>
+                      </div>
+
+                    </a>
+                    <!-- Top 5  -->
+                    <a href="../html/sach-tronlenmainhadekhoc.html"
+                      class="d-flex align-items-center mb-2 pb-2 border-bottom text-decoration-none">
+                      <div class="text-center me-3" style="width: 30px">
+                        <span class="fw-bold fs-5">05</span><br />
+                        <i class="fa-solid fa-arrow-up text-success"></i>
+                      </div>
+                      <img src="../img/img-tronlenmainhadekhoc/bia.png" alt="Sách 2" class="me-3"
+                        style="width: 60px; height: auto; object-fit: cover;" />
+                      <div>
+                        <h6 class="mb-1 text-dark">Trốn Lên Mái Nhà Để Khóc</h6>
+                        <small class="text-muted d-block">Lam</small>
+                        <small class="text-info">2117 điểm</small>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-12 col-lg-6 border">
+                    <a href="../html/sach-hodiepvakinhngu.html"
+                      class="d-flex flex-column flex-xl-row gap-4 align-items-center text-decoration-none text-dark">
+                      <img src="../img/img-hodiepvakinhngu/bia.webp" alt="Chi tiết" class="img-fluid rounded"
+                        style="max-width: 200px; object-fit: contain" />
+
+                      <div>
+                        <h4 class="mb-2">Hồ điệp và kình ngư</h4>
+                        <p class="mb-1 text-muted">Tác giả: Tuế Kiến</p>
+                        <p class="mb-3 text-muted">Nhà xuất bản: Văn Học</p>
+
+                        <h3 class="text-danger fw-bold mb-3">116.000 đ <span
+                            class="fs-6 text-muted text-decoration-line-through ms-2">155.000 đ</span> <span
+                            class="badge bg-warning text-dark ms-2">-28%</span></h3>
+
+                        <h6 class="fw-bold">HỒ ĐIỆP VÀ KÌNH NGƯ - BI KỊCH HAY HUYỀN THOẠI CỦA TÌNH YÊU?</h6>
+                        <p class="text-muted small text-truncate"
+                          style="display: -webkit-box; -webkit-box-orient: vertical; white-space: normal">
+                          Một câu chuyện cuốn hút ngay từ những trang đầu tiên - Khi tình yêu trở thành sợi dây mong
+                          manh giữa sinh tử...</p>
+
+                        <h6 class="fw-bold mt-3">VỀ TÁC GIẢ: Tuế Kiến</h6>
+                        <p class="text-muted small">Tuế Kiến là một tác giả được yêu thích trong dòng văn học lãng
+                          mạn...</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="tab-pane" id="tamlykynang" role="tabpanel" aria-labelledby="tamlykynang-tab">
+              <!-- Tab tam ly ky nang -->
+              <div class="p-3 p-md-4">
+                <div class="row">
+                  <div class="col-12 col-lg-6">
+                    <!-- Top 1 -->
+                    <a href="../html/sach-conduongchangmayaidi.html"
+                      class="d-flex align-items-center mb-2 pb-2 border-bottom text-decoration-none">
+                      <div class="text-center me-3" style="width: 30px">
+                        <span class="fw-bold fs-5">01</span><br />
+                        <i class="fa-solid fa-arrow-up text-success"></i>
+                      </div>
+                      <img src="../img/img-conduongchangmayaidi/bia.png" alt="Sách 1" class="me-3"
+                        style="width: 60px; height: auto; object-fit: cover;" />
+                      <div>
+                        <h6 class="mb-1 text-dark">Con Đường Chẳng Mấy Ai Đi</h6>
+                        <small class="text-muted d-block">M. Scott Peck</small>
+                        <small class="text-info">2563 điểm</small>
+                      </div>
+                    </a>
+                    <!-- Top 2 -->
+                    <a href="../html/sach-ditimlesong.html"
+                      class="d-flex align-items-center mb-2 pb-2 border-bottom text-decoration-none">
+                      <div class="text-center me-3" style="width: 30px">
+                        <span class="fw-bold fs-5">02</span><br />
+                        <i class="fa-solid fa-arrow-up text-success"></i>
+                      </div>
+                      <img src="../img/img-ditimlesong/bia.png" alt="Sách 2" class="me-3"
+                        style="width: 60px; height: auto; object-fit: cover;" />
+                      <div>
+                        <h6 class="mb-1 text-dark">Đi Tìm Lẽ Sống</h6>
+                        <small class="text-muted d-block">Viktor E. Frankl</small>
+                        <small class="text-info">2117 điểm</small>
+                      </div>
+                    </a>
+                    <!-- Top 3 -->
+                    <a href="../html/sach-stopoverthinking.html"
+                      class="d-flex align-items-center mb-2 pb-2 border-bottom text-decoration-none">
+                      <div class="text-center me-3" style="width: 30px">
+                        <span class="fw-bold fs-5">03</span><br />
+                        <i class="fa-solid fa-arrow-up text-success"></i>
+                      </div>
+                      <img src="../img/img-stopoverthinking/bia.png" alt="Sách 3" class="me-3"
+                        style="width: 60px; height: auto; object-fit: cover;" />
+                      <div>
+                        <h6 class="mb-1 text-dark">Stop Overthinking</h6>
+                        <small class="text-muted d-block">Chase Hill, Scott Sharp</small>
+                        <small class="text-info">2112 điểm</small>
+                      </div>
+                    </a>
+                    <!-- Top 4  -->
+                    <a href="../html/sach-khimoidieukhongnhuy.html"
+                      class="d-flex align-items-center mb-2 pb-2 border-bottom text-decoration-none">
+                      <div class="text-center me-3" style="width: 30px">
+                        <span class="fw-bold fs-5">04</span><br />
+                        <i class="fa-solid fa-arrow-up text-success"></i>
+                      </div>
+                      <img src="../img/img-khimoidieukhongnhuy/bia.png" alt="Sách 4" class="me-3"
+                        style="width: 60px; height: auto; object-fit: cover;" />
+                      <div>
+                        <h6 class="mb-1 text-dark">Khi Mọi Điều Không Như Ý</h6>
+                        <small class="text-muted d-block">Hae Min</small>
+                        <small class="text-info">2076 điểm</small>
+                      </div>
+                    </a>
+                    <!-- Top 5  -->
+                    <a href="../html/sach-duatrehieuchuyen.html"
+                      class="d-flex align-items-center mb-2 pb-2 border-bottom text-decoration-none">
+                      <div class="text-center me-3" style="width: 30px">
+                        <span class="fw-bold fs-5">05</span><br />
+                        <i class="fa-solid fa-arrow-up text-success"></i>
+                      </div>
+                      <img src="../img/img-duatrehieuchuyen/bia.png" alt="Sách 5" class="me-3"
+                        style="width: 60px; height: auto; object-fit: cover;" />
+                      <div>
+                        <h6 class="mb-1 text-dark">Đứa Trẻ Hiểu Chuyện Thường Không Có Kẹo Ăn</h6>
+                        <small class="text-muted d-block">Nguyên Anh</small>
+                        <small class="text-info">2057 điểm</small>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <a href="../html/sach-conduongchangmayaidi.html"
+                      class="d-flex flex-column flex-xl-row gap-4 align-items-center text-decoration-none text-dark">
+                      <img src="../img/img-conduongchangmayaidi/bia.png" alt="Chi tiết" class="img-fluid rounded"
+                        style="max-width: 200px; object-fit: contain" />
+
+                      <div>
+                        <h4 class="mb-2">Con Đường Chẳng Mấy Ai Đi</h4>
+                        <p class="mb-1 text-muted">Tác giả: M. Scott Peck</p>
+                        <p class="mb-3 text-muted">Nhà xuất bản: Dân Trí</p>
+
+                        <h3 class="text-danger fw-bold mb-3">99.000 đ <span
+                            class="fs-6 text-muted text-decoration-line-through ms-2">165.000 đ</span> <span
+                            class="badge bg-warning text-dark ms-2">-40%</span></h3>
+
+                        <h6 class="fw-bold">Con Đường Chẳng Mấy Ai Đi</h6>
+                        <p class="text-muted small text-truncate"
+                          style="display: -webkit-box; -webkit-box-orient: vertical; white-space: normal">
+                          Có lẽ không quyển sách nào trong thế kỷ này có tác động sâu sắc đến đời sống trí tuệ và tinh
+                          thần của chúng ta hơn Con Đường Chẳng Mấy Ai Đi. Với doanh số trên 10 triệu bản...</p>
+                        <p class="text-muted small text-truncate"
+                          style="display: -webkit-box; -webkit-box-orient: vertical; white-space: normal">
+                          Với dòng mở đầu bất hủ của quyển sách, "Cuộc đời này rất khó sống", thể hiện quan điểm hành
+                          trình phát triển tinh thần là một chặng đường dài và gian nan, Tiến sĩ Peck thể hiện sự đồng
+                          cảm, nhẹ nhàng...
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="tab-pane" id="nuoidaycon" role="tabpanel" aria-labelledby="nuoidaycon-tab">
+              <!-- Tab nuoi day con -->
+              <div class="p-3 p-md-4">
+                <div class="row">
+                  <div class="col-12 col-lg-6">
+                    <!-- Top 1 -->
+                    <a href="../html/sach-lamchametinhthuc.html"
+                      class="d-flex align-items-center mb-2 pb-2 border-bottom text-decoration-none">
+                      <div class="text-center me-3" style="width: 30px">
+                        <span class="fw-bold fs-5">01</span><br />
+                        <i class="fa-solid fa-arrow-up text-success"></i>
+                      </div>
+                      <img src="../img/img-lamchametinhthuc/bia.png" alt="Sách 1" class="me-3"
+                        style="width: 60px; height: auto; object-fit: cover;" />
+                      <div>
+                        <h6 class="mb-1 text-dark">Làm Cha Mẹ Tỉnh Thức</h6>
+                        <small class="text-muted d-block">Tiến sĩ Shefali Tsabary</small>
+                        <small class="text-info">2363 điểm</small>
+                      </div>
+                    </a>
+                    <!-- Top 2 -->
+                    <a href="../html/sach-chavoi.html"
+                      class="d-flex align-items-center mb-2 pb-2 border-bottom text-decoration-none">
+                      <div class="text-center me-3" style="width: 30px">
+                        <span class="fw-bold fs-5">02</span><br />
+                        <i class="fa-solid fa-arrow-up text-success"></i>
+                      </div>
+                      <img src="../img/img-chavoi/bia.png" alt="Sách 2" class="me-3"
+                        style="width: 60px; height: auto; object-fit: cover;" />
+                      <div>
+                        <h6 class="mb-1 text-dark">Cha Voi</h6>
+                        <small class="text-muted d-block">Trương Nguyên Thành</small>
+                        <small class="text-info">2117 điểm</small>
+                      </div>
+                    </a>
+                    <!-- Top 3 -->
+                    <a href="../html/sach-nuoidayembe.html"
+                      class="d-flex align-items-center mb-2 pb-2 border-bottom text-decoration-none">
+                      <div class="text-center me-3" style="width: 30px">
+                        <span class="fw-bold fs-5">03</span><br />
+                        <i class="fa-solid fa-arrow-up text-success"></i>
+                      </div>
+                      <img src="../img/img-nuoidayembe/bia.png" alt="Sách 3" class="me-3"
+                        style="width: 60px; height: auto; object-fit: cover;" />
+                      <div>
+                        <h6 class="mb-1 text-dark">Nuôi Dạy Có Chính Kiến</h6>
+                        <small class="text-muted d-block">Alicia Vu</small>
+                        <small class="text-info">2112 điểm</small>
+                      </div>
+                    </a>
+                    <!-- Top 4  -->
+                    <a href="../html/sach-daycontronghoangmang.html"
+                      class="d-flex align-items-center mb-2 pb-2 border-bottom text-decoration-none">
+                      <div class="text-center me-3" style="width: 30px">
+                        <span class="fw-bold fs-5">04</span><br />
+                        <i class="fa-solid fa-arrow-up text-success"></i>
+                      </div>
+                      <img src="../img/img-daycontronghoangmang/bia.png" alt="Sách 4" class="me-3"
+                        style="width: 60px; height: auto; object-fit: cover;" />
+                      <div>
+                        <h6 class="mb-1 text-dark">Dạy Con Trong Hoang Mang</h6>
+                        <small class="text-muted d-block">TS Lê Nguyên Phương</small>
+                        <small class="text-info">2076 điểm</small>
+                      </div>
+                    </a>
+                    <!-- Top 5  -->
+                    <a href="../html/sach-conkhongngoc.html"
+                      class="d-flex align-items-center mb-2 pb-2 border-bottom text-decoration-none">
+                      <div class="text-center me-3" style="width: 30px">
+                        <span class="fw-bold fs-5">05</span><br />
+                        <i class="fa-solid fa-arrow-up text-success"></i>
+                      </div>
+                      <img src="../img/img-conkhongngoc/bia.png" alt="Sách 5" class="me-3"
+                        style="width: 60px; height: auto; object-fit: cover;" />
+                      <div>
+                        <h6 class="mb-1 text-dark">Con Không Ngốc Con Chỉ Thông Minh Một Cách Khác</h6>
+                        <small class="text-muted d-block">Lư Tô Vỹ</small>
+                        <small class="text-info">2057 điểm</small>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <a href="../html/sach-lamchametinhthuc.html"
+                      class="d-flex flex-column flex-xl-row gap-4 align-items-center text-decoration-none text-dark">
+                      <img src="../img/img-lamchametinhthuc/bia.png" alt="Chi tiết" class="img-fluid rounded"
+                        style="max-width: 200px; object-fit: contain" />
+
+                      <div>
+                        <h4 class="mb-2">Làm Cha Mẹ Tỉnh Thức</h4>
+                        <p class="mb-1 text-muted">Tác giả: Tiến sĩ Shefali Tsabary</p>
+                        <p class="mb-3 text-muted">Nhà xuất bản: Lao Động</p>
+
+                        <h3 class="text-danger fw-bold mb-3">119.000 đ <span
+                            class="fs-6 text-muted text-decoration-line-through ms-2">149.000 đ</span> <span
+                            class="badge bg-warning text-dark ms-2">-20%</span></h3>
+
+                        <h6 class="fw-bold">Làm Cha Mẹ Tỉnh Thức</h6>
+                        <p class="text-muted small text-truncate"
+                          style="display: -webkit-box; -webkit-box-orient: vertical; white-space: normal">
+                          Khi nuôi dạy con cái, ta thường xuyên bắt gặp mình đứng trước cuộc chiến giữa lý trí và con
+                          tim, như luôn phải đi thăng bằng trên dây. Một phản ứng...</p>
+
+                        <h6 class="fw-bold mt-3">VỀ TÁC GIẢ: Tiến sĩ Shefali Tsabary</h6>
+                        <p class="text-muted small">Tiến sĩ Shefali Tsabary nhận bằng tiến sĩ chuyên ngành Tâm lý lâm
+                          sàng, Đại học Columbia, New York. Bà được tiếp cận với quan điểm phương Đông từ rất...</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="tab-pane" id="sachthieunhi" role="tabpanel" aria-labelledby="sachthieunhi-tab">
+              <!-- Tab sach thieu nhi -->
+              <div class="p-3 p-md-4">
+                <div class="row">
+                  <div class="col-12 col-lg-6">
+                    <!-- Top 1 -->
+                    <a href="../html/sach-conan.html"
+                      class="d-flex align-items-center mb-2 pb-2 border-bottom text-decoration-none">
+                      <div class="text-center me-3" style="width: 30px">
+                        <span class="fw-bold fs-5">01</span><br />
+                        <i class="fa-solid fa-arrow-up text-success"></i>
+                      </div>
+                      <img src="../img/img-conan/bia.png" alt="Sách 1" class="me-3"
+                        style="width: 60px; height: auto; object-fit: cover;" />
+                      <div>
+                        <h6 class="mb-1 text-dark">Conan tập 103</h6>
+                        <small class="text-muted d-block">Gosho Aoyama</small>
+                        <small class="text-info">2363 điểm</small>
+                      </div>
+                    </a>
+                    <!-- Top 2 -->
+                    <a href="../html/sach-cuocgapgodinhmenh.html"
+                      class="d-flex align-items-center mb-2 pb-2 border-bottom text-decoration-none">
+                      <div class="text-center me-3" style="width: 30px">
+                        <span class="fw-bold fs-5">02</span><br />
+                        <i class="fa-solid fa-arrow-up text-success"></i>
+                      </div>
+                      <img src="../img/img-cuocgapgodinhmenh/bia.png" alt="Sách 2" class="me-3"
+                        style="width: 60px; height: auto; object-fit: cover;" />
+                      <div>
+                        <h6 class="mb-1 text-dark">Liệu Có Sai Lầm Khi Tìm Kiếm Cuộc Gặp Gỡ Định Mệnh Trong Dungeon -
+                          Tập 4</h6>
+                        <small class="text-muted d-block">Fujino Omori, Suzuhito Yasuda</small>
+                        <small class="text-info">2117 điểm</small>
+                      </div>
+                    </a>
+                    <!-- Top 3 -->
+                    <a href="../html/sach-kynangsinhton.html"
+                      class="d-flex align-items-center mb-2 pb-2 border-bottom text-decoration-none">
+                      <div class="text-center me-3" style="width: 30px">
+                        <span class="fw-bold fs-5">03</span><br />
+                        <i class="fa-solid fa-arrow-up text-success"></i>
+                      </div>
+                      <img src="../img/img-kynangsinhton/bia.png" alt="Sách 3" class="me-3"
+                        style="width: 60px; height: auto; object-fit: cover;" />
+                      <div>
+                        <h6 class="mb-1 text-dark">100 Kỹ Năng Sinh Tồn</h6>
+                        <small class="text-muted d-block">Clint Emerson</small>
+                        <small class="text-info">2112 điểm</small>
+                      </div>
+                    </a>
+                    <!-- Top 4  -->
+                    <a href="../html/sach-danhnhanthegioi.html"
+                      class="d-flex align-items-center mb-2 pb-2 border-bottom text-decoration-none">
+                      <div class="text-center me-3" style="width: 30px">
+                        <span class="fw-bold fs-5">04</span><br />
+                        <i class="fa-solid fa-arrow-up text-success"></i>
+                      </div>
+                      <img src="../img/img-danhnhanthegioi/bia.png" alt="Sách 4" class="me-3"
+                        style="width: 60px; height: auto; object-fit: cover;" />
+                      <div>
+                        <h6 class="mb-1 text-dark">Danh Nhân Thế Giới - Edison (Tái Bản 2022)</h6>
+                        <small class="text-muted d-block">Tác giả: Neung In Publishing Company</small>
+                        <small class="text-info">2076 điểm</small>
+                      </div>
+                    </a>
+                    <!-- Top 5  -->
+                    <a href="../html/sach-spyxfamily.html"
+                      class="d-flex align-items-center mb-2 pb-2 border-bottom text-decoration-none">
+                      <div class="text-center me-3" style="width: 30px">
+                        <span class="fw-bold fs-5">05</span><br />
+                        <i class="fa-solid fa-arrow-up text-success"></i>
+                      </div>
+                      <img src="../img/img-spyxfamily/bia.png" alt="Sách 5" class="me-3"
+                        style="width: 60px; height: auto; object-fit: cover;" />
+                      <div>
+                        <h6 class="mb-1 text-dark">SPY x FAMILY 家族の肖像 - SPY x FAMILY Kazoku No Shouzou</h6>
+                        <small class="text-muted d-block"> 遠藤 達哉, 矢島 綾</small>
+                        <small class="text-info">2057 điểm</small>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <a href="../html/sach-conan.html"
+                      class="d-flex flex-column flex-xl-row gap-4 align-items-center text-decoration-none text-dark">
+                      <img src="../img/img-conan/bia.png" alt="Chi tiết" class="img-fluid rounded"
+                        style="max-width: 200px; object-fit: contain" />
+
+                      <div>
+                        <h4 class="mb-2">Conan tập 103</h4>
+                        <p class="mb-1 text-muted">Tác giả: Gosho Aoyama</p>
+                        <p class="mb-3 text-muted">Nhà xuất bản: Kim Đồng</p>
+
+                        <h3 class="text-danger fw-bold mb-3">21.000 đ <span
+                            class="fs-6 text-muted text-decoration-line-through ms-2">25.000 đ</span> <span
+                            class="badge bg-warning text-dark ms-2">-16%</span></h3>
+
+                        <h6 class="fw-bold">Thám Tử Lừng Danh Conan - Tập 103</h6>
+                        <p class="text-muted small text-truncate"
+                          style="display: -webkit-box; -webkit-box-orient: vertical; white-space: normal">
+                          Khách sạn nơi Sera và Mary đang ở bỗng nhận được thư cảnh báo đánh bom! Giữa lúc nhiều suy
+                          nghĩ đan xen, Conan đã cùng luật sư Kisaki truy tìm hung thủ!! Nhóm thám tử nhí ra biển chơi.
+                          Người đưa chúng đi là...</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="tab-pane" id="tieusuhoiky" role="tabpanel" aria-labelledby="tieusuhoiky-tab">
+              <!-- Tab tieu su hoi ky -->
+              <div class="p-3 p-md-4">
+                <div class="row">
+                  <div class="col-12 col-lg-6">
+                    <!-- Top 1 -->
+                    <a href="../html/sach-hanhtrinhyeuthuong.html"
+                      class="d-flex align-items-center mb-2 pb-2 border-bottom text-decoration-none">
+                      <div class="text-center me-3" style="width: 30px">
+                        <span class="fw-bold fs-5">01</span><br />
+                        <i class="fa-solid fa-arrow-up text-success"></i>
+                      </div>
+                      <img src="../img/img-hanhtrinhyeuthuong/bia.png" alt="Sách 1" class="me-3"
+                        style="width: 60px; height: auto; object-fit: cover;" />
+                      <div>
+                        <h6 class="mb-1 text-dark">Hành Trình Yêu Thương - Nhật Ký Thiện Nhân</h6>
+                        <small class="text-muted d-block">Trần Mai Anh</small>
+                        <small class="text-info">2363 điểm</small>
+                      </div>
+                    </a>
+                    <!-- Top 2 -->
+                    <a href="../html/sach-nguoithay.html"
+                      class="d-flex align-items-center mb-2 pb-2 border-bottom text-decoration-none">
+                      <div class="text-center me-3" style="width: 30px">
+                        <span class="fw-bold fs-5">02</span><br />
+                        <i class="fa-solid fa-arrow-up text-success"></i>
+                      </div>
+                      <img src="../img/img-nguoithay/bia.png" alt="Sách 2" class="me-3"
+                        style="width: 60px; height: auto; object-fit: cover;" />
+                      <div>
+                        <h6 class="mb-1 text-dark">Người thầy</h6>
+                        <small class="text-muted d-block">Nguyễn Chí Vịnh</small>
+                        <small class="text-info">2117 điểm</small>
+                      </div>
+                    </a>
+                    <!-- Top 3 -->
+                    <a href="../html/sach-hoikyanhhunglaodongtrandainghia.html"
+                      class="d-flex align-items-center mb-2 pb-2 border-bottom text-decoration-none">
+                      <div class="text-center me-3" style="width: 30px">
+                        <span class="fw-bold fs-5">03</span><br />
+                        <i class="fa-solid fa-arrow-up text-success"></i>
+                      </div>
+                      <img src="../img/img-hoikyanhhunglaodongtrandainghia/bia.png" alt="Sách 3" class="me-3"
+                        style="width: 60px; height: auto; object-fit: cover;" />
+                      <div>
+                        <h6 class="mb-1 text-dark">Hồi Ký Giáo Sư-Viện Sĩ-Thiếu Tướng-Anh Hùng Lao Động Trần Đại Nghĩa -
+                          Cuộc Đời Và Hành Trình Sự Nghiệp
+                        </h6>
+                        <small class="text-muted d-block">Nhiều Tác Giả</small>
+                        <small class="text-info">2112 điểm</small>
+                      </div>
+                    </a>
+                    <!-- Top 4  -->
+                    <a href="../html/sach-ganhganhgongong.html"
+                      class="d-flex align-items-center mb-2 pb-2 border-bottom text-decoration-none">
+                      <div class="text-center me-3" style="width: 30px">
+                        <span class="fw-bold fs-5">04</span><br />
+                        <i class="fa-solid fa-arrow-up text-success"></i>
+                      </div>
+                      <img src="../img/img-ganhganhgongong/bia.png" alt="Sách 4" class="me-3"
+                        style="width: 60px; height: auto; object-fit: cover;" />
+                      <div>
+                        <h6 class="mb-1 text-dark">Gánh Gánh Gồng Gồng</h6>
+                        <small class="text-muted d-block">Nguyễn Thị Xuân Phượng</small>
+                        <small class="text-info">2076 điểm</small>
+                      </div>
+                    </a>
+                    <!-- Top 5  -->
+                    <a href="../html/sach-lamsondaynghia.html"
+                      class="d-flex align-items-center mb-2 pb-2 border-bottom text-decoration-none">
+                      <div class="text-center me-3" style="width: 30px">
+                        <span class="fw-bold fs-5">05</span><br />
+                        <i class="fa-solid fa-arrow-up text-success"></i>
+                      </div>
+                      <img src="../img/img-lamsondaynghia/bia.png" alt="Sách 5" class="me-3"
+                        style="width: 60px; height: auto; object-fit: cover;" />
+                      <div>
+                        <h6 class="mb-1 text-dark">Lam Sơn Dấy Nghĩa</h6>
+                        <small class="text-muted d-block">Trần Bạch Đằng, Lê Văn Năm, Nguyễn Huy Khôi, Nguyễn Thùy
+                          Linh</small>
+                        <small class="text-info">2057 điểm</small>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <a href="../html/sach-hanhtrinhyeuthuong.html"
+                      class="d-flex flex-column flex-xl-row gap-4 align-items-center text-decoration-none text-dark">
+                      <img src="../img/img-hanhtrinhyeuthuong/bia.png" alt="Chi tiết" class="img-fluid rounded"
+                        style="max-width: 200px; object-fit: contain" />
+
+                      <div>
+                        <h4 class="mb-2">Hành Trình Yêu Thương - Nhật Ký Thiện Nhân</h4>
+                        <p class="mb-1 text-muted">Tác giả: Trần Mai Anh</p>
+                        <p class="mb-3 text-muted">Nhà xuất bản: NXB Kim Đồng</p>
+
+                        <h3 class="text-danger fw-bold mb-3">76.000 đ <span
+                            class="fs-6 text-muted text-decoration-line-through ms-2">90.000 đ</span> <span
+                            class="badge bg-warning text-dark ms-2">-28%</span></h3>
+
+                        <h6 class="fw-bold">Hành Trình Yêu Thương - Nhật Kí Thiện Nhân</h6>
+                        <p class="text-muted small text-truncate"
+                          style="display: -webkit-box; -webkit-box-orient: vertical; white-space: normal">
+                          Hành trình yêu thương: Nhật kí Thiện Nhân kể câu chuyện về những hành trình nối tiếp hành
+                          trình mà mẹ Mai Anh, ông bà, hai anh Minh, cùng biết bao bố, mẹ, các y bác sĩ, những nhà hảo
+                          tâm...</p>
+
+                        <h6 class="fw-bold mt-3">VỀ TÁC GIẢ: Trần Mai Anh (Mẹ Còi)</h6>
+                        <p class="text-muted small">Sinh ngày 27 tháng 4 năm 1973 tại Hà Nội.
+                          Một trong những người sáng lập Hành trình Thiện Nhân và những người bạn thuộc Quỹ Phòng chống
+                          Thương vong châu Á - khám, tư vấn và phẫu thuật miễn phí cho trẻ em...</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </article>
+      </div>
+    </div>
+  </div>
+  <footer class="text-center">
+        <div class="row">
+            <div class="col-md-4 d-flex flex-column col-sm-12">
+                <a class="navbar-brand fw-bold fs-2 me-4" href="../html/home.html">
+                    <span
+                        style="color: black; font-family: 'Dancing Script', cursive; font-size: 2.3em;">BookShop</span>
+                </a>
+                <i class="fs-5">
+                    "Mở cuốn sách, mở tương lai."
+                </i>
+                <div class="inf d-flex justify-content-center align-items-center gap-2 mt-3">
+                    <a href="#" class="text-decoration-none text-white fa-brands fa-facebook fs-3"></a>
+                    <a href="#" class="text-decoration-none text-white fa-brands fa-instagram fs-3"></a>
+                    <a href="#" class="text-decoration-none text-white fa-brands fa-youtube fs-3"></a>
+                    <a href="#" class="text-decoration-none text-white fa-brands fa-tiktok fs-3"></a>
+                </div>
+            </div>
+            <div class="col-md-7 mt-3">
+                <div class="row">
+                    <div class="col-md-4 mb-2">
+                        <h4 class="text-center text-md-start fw-bolder mb-3">Dịch vụ</h4>
+                        <div class="d-flex flex-column  align-items-center align-items-md-start">
+                            <a href="index.html" class="text-decoration-none text-white">Giới thiệu BookShop</a>
+                            <a href="#" class="text-decoration-none text-white">Điều khoản sử dụng</a>
+                            <a href="#" class="text-decoration-none text-white">Chính sách bảo mật</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <h4 class="text-center text-md-start fw-bolder mb-3">Hỗ trợ</h4>
+                        <div class="d-flex flex-column align-items-center align-items-md-start">
+                            <a href="#" class="text-decoration-none text-white">Chính sách đổi - trả - hoàn tiền</a>
+                            <a href="#" class="text-decoration-none text-white">Chính sách bảo hành</a>
+                            <a href="#" class="text-decoration-none text-white">Chính sách vận chuyển</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <h4 class="text-center text-md-start fw-bolder mb-3">Tài khoản</h4>
+                        <div class="d-flex flex-column align-items-center align-items-md-start">
+                            <a href="../html/user.html" class="text-decoration-none text-white">Thông tin tài khoản</a>
+                            <a href="../html/login_register.html" class="text-decoration-none text-white">Đăng nhập / Tạo tài khoản</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-none justify-content-between align-content-center mt-4 d-md-flex">
+                    <div class="col">
+                        <img src="../img/img-icon/vnp.png" alt="" srcset="" class="img-fluid logo-footer">
+                    </div>
+                    <div class="col">
+                        <img src="../img/img-icon/vt.png" alt="" srcset="" class="img-fluid logo-footer">
+                    </div>
+                    <div class="col">
+                        <img src="../img/img-icon/sp.png" alt="" srcset="" class="img-fluid logo-footer">
+                    </div>
+                    <div class="col">
+                        <img src="../img/img-icon/vp.png" alt="" srcset="" class="img-fluid logo-footer">
+                    </div>
+                    <div class="col">
+                        <img src="../img/img-icon/zp.png" alt="" srcset="" class="img-fluid logo-footer">
+                    </div>
+                    <div class="col">
+                        <img src="../img/img-icon/mm.png" alt="" srcset="" width="100px" class="img-fluid logo-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+  <!-- Modal Body -->
+  <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+  <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+    aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 style="color: white" class="modal-title" id="modalTitleId">Hình ảnh minh họa</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+          <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselId" data-bs-slide-to="0" class="active bg-danger"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button class="bg-danger" type="button" data-bs-target="#carouselId" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button class="bg-danger" type="button" data-bs-target="#carouselId" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button class="bg-danger" type="button" data-bs-target="#carouselId" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+              <button class="bg-danger" type="button" data-bs-target="#carouselId" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+              
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active text-center">
+                <img class="text-center" style="max-height: 500px; max-width: 700px"
+                  src="../img/img-tronlenmainhadekhoc/slide/slide1.png" class="d-block w-100 h-100" alt="Slide 1" />
+              </div>
+              <div class="carousel-item text-center">
+                <img class="text-center" style="max-height: 500px; max-width: 700px"
+                  src="../img/img-tronlenmainhadekhoc/slide/slide2.png" class="d-block w-100" alt="Slide 2" />
+              </div>
+              <div class="carousel-item text-center">
+                <img class="text-center" style="max-height: 500px; max-width: 700px"
+                  src="../img/img-tronlenmainhadekhoc/slide/slide3.png" class="d-block w-100" alt="Slide 3" />
+              </div>
+              <div class="carousel-item text-center">
+                <img class="text-center" style="max-height: 500px; max-width: 700px"
+                  src="../img/img-tronlenmainhadekhoc/slide/slide4.png" class="d-block w-100" alt="Slide 4" />
+              </div>
+              <div class="carousel-item text-center">
+                <img class="text-center" style="max-height: 500px; max-width: 700px"
+                  src="../img/img-tronlenmainhadekhoc/slide/slide5.png" class="d-block w-100" alt="Slide 5" />
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="modal-footer bg-success">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  <script>
+    function toggleDescription() {
+      //lop mo mo cho xem them
+      const content = document.getElementById("descContent");
+      const btn = document.getElementById("toggleBtn");
+
+      if (content.classList.contains("expanded")) {
+        content.classList.remove("expanded");
+        content.classList.add("collapsed");
+        btn.innerText = "Xem thêm";
+
+        content.scrollIntoView({ behavior: "smooth" });
+      } else {
+        content.classList.remove("collapsed");
+        content.classList.add("expanded");
+        btn.innerText = "Rút gọn";
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("descContent").classList.add("collapsed");
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      //nut chuyen slide
+      const btnMinus = document.getElementById("btn-minus");
+      const btnPlus = document.getElementById("btn-plus");
+      const input = document.getElementById("quantity-input");
+
+      // Dau -
+      btnMinus.addEventListener("click", function () {
+        let currentValue = parseInt(input.value);
+        if (currentValue > 1) {
+          //Gioi han >1
+          input.value = currentValue - 1;
+        }
+      });
+
+      // Dau +
+      btnPlus.addEventListener("click", function () {
+        let currentValue = parseInt(input.value);
+        input.value = currentValue + 1;
+      });
+    });
+
+    //dang nhap
+    document.addEventListener("DOMContentLoaded", function () {
+      const authSection = document.getElementById('auth-section');
+      const currentUser = localStorage.getItem('currentUser');
+
+      if (currentUser) {
+        //thanh cong dang nhap
+
+        authSection.innerHTML = `
+        <a href="cart.html" class="btn btn-outline-light d-flex align-items-center gap-2 border-0">
+            <span>Giỏ Hàng</span>
+            <i class="fa-solid fa-cart-shopping fs-5"></i>
+        </a>
+        
+        <a href="user.html" class="btn btn-outline-light d-flex align-items-center gap-2 border-0">
+            <span class="text-decoration-underline">${currentUser}</span>
+            <i class="fa-solid fa-circle-user fs-5"></i>
+        </a>
+
+        <button id="logout-btn" class="btn btn-outline-danger d-flex align-items-center gap-2 border-0 px-3 text-white">
+            Đăng xuất
+        </button>
+      `;
+
+        document.getElementById('logout-btn').addEventListener('click', function () {
+          if (confirm("Bạn có muốn đăng xuất không?")) {
+            localStorage.removeItem('currentUser');
+            window.location.reload();
+          }
+        });
+      }
+    });
+    //lay thong tin chuyen qua gio hang
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const btnAddToCart = document.querySelector(".btn-themgiohang");
+      const btnBuyNow = document.querySelector(".btn-muangay");
+      const quantityInput = document.getElementById("quantity-input");
+
+      function addToCart(redirect = false) {
+        const currentUser = localStorage.getItem('currentUser');
+        const cartKey = currentUser ? `cart_${currentUser}` : "cart_guest";
+        const rawPrice = document.getElementById("book-price").innerText.replace(/\./g, '');
+        const product = {
+          name: document.getElementById("book-name").innerText,
+          price: parseInt(rawPrice),
+          image: document.getElementById("product-img").src,
+          quantity: parseInt(quantityInput.value),
+          type: "Bìa mềm"
+        };
+
+        let cart = JSON.parse(localStorage.getItem(cartKey)) || [];
+
+        const existingProductIndex = cart.findIndex(item => item.name === product.name);
+
+        if (existingProductIndex > -1) {
+          cart[existingProductIndex].quantity += product.quantity;
+        } else {
+          cart.push(product);
+        }
+
+        localStorage.setItem(cartKey, JSON.stringify(cart));
+        alert("Đã thêm sản phẩm vào giỏ hàng!");
+
+        if (redirect) {
+          window.location.href = "cart.html";
+        }
+      }
+
+      btnAddToCart.addEventListener("click", () => addToCart(false));
+      btnBuyNow.addEventListener("click", () => addToCart(true));
+    });
+  </script>
+</body>
+
+</html>

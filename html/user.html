@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/header.footer.css">
+</head>
+
+<body>
+    <header class="custom-header sticky-top shadow-sm py-2 mb-4">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl navbar-dark">
+                <a class="navbar-brand fw-bold fs-2 me-4" href="../html/home.html">
+                    <span style="color: black; font-family: 'Dancing Script', cursive;">BookShop</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button">
+                                <i class="fa-solid fa-bars me-1"></i> <span>DANH MỤC</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">VĂN HỌC</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="menu-tieuthuyet.html">Tiểu thuyết</a></li>
+                                        <li><a class="dropdown-item" href="menu-truyenngan-tanvan.html">Truyện ngắn -
+                                                Tản văn</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">TÂM LÝ - KỸ NĂNG</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="menu-kynangsong.html">Kỹ năng sống</a></li>
+                                        <li><a class="dropdown-item" href="menu-tamly.html">Tâm lý học</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">NUÔI DẠY CON</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="menu-camnangchame.html">Cẩm nang cha mẹ</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="menu-giaoductre.html">Giáo dục trẻ</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">SÁCH THIẾU NHI</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="menu-manga-comic.html">Manga - Comic</a></li>
+                                        <li><a class="dropdown-item" href="menu-kienthucbachkhoa.html">Kiến thức bách
+                                                khoa</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">TIỂU SỬ - HỒI KÝ</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="menu-cauchuyencuocdoi.html">Câu chuyện cuộc
+                                                đời</a></li>
+                                        <li><a class="dropdown-item" href="menu-lichsu.html">Lịch Sử</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex mx-auto w-50 my-2 my-xl-0">
+                        <div class="input-group">
+                            <input class="form-control" type="search" placeholder="Thể loại, Sách, Tác giả..."
+                                aria-label="Search">
+                            <button class="btn btn-light" type="submit border">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </form>
+
+                    <div id="auth-section"
+                        class="d-flex align-items-center gap-3 ms-xl-4 text-white justify-content-center">
+                        <a href="../html/cart.html"
+                            class="btn btn-outline-light d-flex align-items-center gap-2 border-0 ">
+                            <span>Giỏ Hàng</span>
+                            <i class="fa-solid fa-cart-shopping fs-5"></i>
+                        </a>
+                        <button id="logout-btn"
+                            class="btn btn-outline-danger d-flex align-items-center gap-2 border-0 px-3 text-white">
+                            Đăng xuất
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- container o day -->
+    <div class="container my-5 mt-auto" style="height: 60vh;">
+        <div class="card shadow p-4" style="max-width:900px; margin:auto; border-radius:15px;">
+
+            <h3 class="text-center mb-4 text-primary fw-bold ">Thêm thông tin cá nhân</h3>
+
+            <form>
+                <div class="row g-3">
+
+                    <div class="col-md-6">
+                        <label class="fw-bold">Username</label>
+                        <input type="text" id="username" class="form-control" readonly>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="fw-bold">Họ tên</label>
+                        <input type="text" id="fullname" class="form-control" readonly>
+                        <small class="text-danger" id="name-error"></small>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="fw-bold">Ngày sinh</label>
+                        <input type="date" id="dob" class="form-control" readonly>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="fw-bold">Địa chỉ</label>
+                        <input type="text" id="address" class="form-control" readonly>
+                        <small class="text-danger" id="address-error"></small>
+                    </div>
+
+                    <!-- NEW: PHONE -->
+                    <div class="col-md-6">
+                        <label class="fw-bold">Số điện thoại</label>
+                        <input type="text" id="phone" class="form-control" readonly>
+                        <small class="text-danger" id="phone-error"></small>
+                    </div>
+
+                    <!-- NEW: EMAIL -->
+                    <div class="col-md-6">
+                        <label class="fw-bold">Email</label>
+                        <input type="text" id="email" class="form-control" readonly>
+                        <small class="text-danger" id="email-error"></small>
+                    </div>
+
+                </div>
+
+                <div class="text-center mt-4">
+                    <button type="button" id="edit-btn" class="btn btn-warning px-4">
+                        Sửa
+                    </button>
+
+                    <button type="button" id="save-btn" class="btn btn-success px-4 d-none">
+                        Lưu
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <footer class="text-center">
+        <div class="row">
+            <div class="col-md-4 d-flex flex-column col-sm-12">
+                <a class="navbar-brand fw-bold fs-2 me-4" href="../html/home.html">
+                    <span
+                        style="color: black; font-family: 'Dancing Script', cursive; font-size: 2.3em;">BookShop</span>
+                </a>
+                <i class="fs-5">
+                    "Mở cuốn sách, mở tương lai."
+                </i>
+                <div class="inf d-flex justify-content-center align-items-center gap-2 mt-3">
+                    <a href="#" class="text-decoration-none text-white fa-brands fa-facebook fs-3"></a>
+                    <a href="#" class="text-decoration-none text-white fa-brands fa-instagram fs-3"></a>
+                    <a href="#" class="text-decoration-none text-white fa-brands fa-youtube fs-3"></a>
+                    <a href="#" class="text-decoration-none text-white fa-brands fa-tiktok fs-3"></a>
+                </div>
+            </div>
+            <div class="col-md-7 mt-3">
+                <div class="row">
+                    <div class="col-md-4 mb-2">
+                        <h4 class="text-center text-md-start fw-bolder mb-3">Dịch vụ</h4>
+                        <div class="d-flex flex-column  align-items-center align-items-md-start">
+                            <a href="index.html" class="text-decoration-none text-white">Giới thiệu BookShop</a>
+                            <a href="#" class="text-decoration-none text-white">Điều khoản sử dụng</a>
+                            <a href="#" class="text-decoration-none text-white">Chính sách bảo mật</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <h4 class="text-center text-md-start fw-bolder mb-3">Hỗ trợ</h4>
+                        <div class="d-flex flex-column align-items-center align-items-md-start">
+                            <a href="#" class="text-decoration-none text-white">Chính sách đổi - trả - hoàn tiền</a>
+                            <a href="#" class="text-decoration-none text-white">Chính sách bảo hành</a>
+                            <a href="#" class="text-decoration-none text-white">Chính sách vận chuyển</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <h4 class="text-center text-md-start fw-bolder mb-3">Tài khoản</h4>
+                        <div class="d-flex flex-column align-items-center align-items-md-start">
+                            <a href="../html/user.html" class="text-decoration-none text-white">Thông tin tài khoản</a>
+                            <a href="../html/login_register.html" class="text-decoration-none text-white">Đăng nhập /
+                                Tạo tài khoản</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-none justify-content-between align-content-center mt-4 d-md-flex">
+                    <div class="col">
+                        <img src="../img/img-icon/vnp.png" alt="" srcset="" class="img-fluid logo-footer">
+                    </div>
+                    <div class="col">
+                        <img src="../img/img-icon/vt.png" alt="" srcset="" class="img-fluid logo-footer">
+                    </div>
+                    <div class="col">
+                        <img src="../img/img-icon/sp.png" alt="" srcset="" class="img-fluid logo-footer">
+                    </div>
+                    <div class="col">
+                        <img src="../img/img-icon/vp.png" alt="" srcset="" class="img-fluid logo-footer">
+                    </div>
+                    <div class="col">
+                        <img src="../img/img-icon/zp.png" alt="" srcset="" class="img-fluid logo-footer">
+                    </div>
+                    <div class="col">
+                        <img src="../img/img-icon/mm.png" alt="" srcset="" width="100px" class="img-fluid logo-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script>
+
+        document.getElementById('logout-btn').addEventListener('click', function () {
+            if (confirm("Bạn có muốn đăng xuất không?")) {
+                localStorage.removeItem('currentUser');
+                window.location.href = "home.html";
+
+            }
+        });
+
+        const usernameInput = document.getElementById("username");
+        const fullnameInput = document.getElementById("fullname");
+        const dobInput = document.getElementById("dob");
+        const addressInput = document.getElementById("address");
+        const phoneInput = document.getElementById("phone");
+        const emailInput = document.getElementById("email");
+        const editBtn = document.getElementById("edit-btn");
+        const saveBtn = document.getElementById("save-btn");
+        const nameError = document.getElementById("name-error");
+        const addressError = document.getElementById("address-error");
+        const phoneError = document.getElementById("phone-error");
+        const emailError = document.getElementById("email-error");
+        const currentUser = localStorage.getItem("currentUser");
+
+        // REGEX
+        const nameRegex = /^[A-ZÀ-Ỹ][a-zà-ỹ]*(\s[A-ZÀ-Ỹ][a-zà-ỹ]*)*$/;
+        const phoneRegex = /^0\d{9}$/;
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+
+        // LOAD DATA
+        if (currentUser) {
+            usernameInput.value = currentUser;
+
+            const data = JSON.parse(localStorage.getItem("user_" + currentUser));
+
+            if (data) {
+                fullnameInput.value = data.fullname || "";
+                dobInput.value = data.dob || "";
+                addressInput.value = data.address || "";
+                phoneInput.value = data.phone || "";
+                emailInput.value = data.email || "";
+            }
+        }
+
+        // EDIT
+        editBtn.onclick = () => {
+            fullnameInput.removeAttribute("readonly");
+            dobInput.removeAttribute("readonly");
+            addressInput.removeAttribute("readonly");
+            phoneInput.removeAttribute("readonly");
+            emailInput.removeAttribute("readonly");
+
+            editBtn.classList.add("d-none");
+            saveBtn.classList.remove("d-none");
+        };
+
+        // VALIDATE REALTIME
+        fullnameInput.oninput = () => {
+            if (!nameRegex.test(fullnameInput.value)) {
+                nameError.innerText = "Viết hoa chữ cái đầu mỗi từ!";
+            } else nameError.innerText = "";
+        };
+
+        addressInput.oninput = () => {
+            if (addressInput.value.length < 5) {
+                addressError.innerText = "Địa chỉ >= 5 ký tự!";
+            } else addressError.innerText = "";
+        };
+
+        phoneInput.oninput = () => {
+            if (!phoneRegex.test(phoneInput.value)) {
+                phoneError.innerText = "SĐT phải bắt đầu 0 và đủ 10 số!";
+            } else phoneError.innerText = "";
+        };
+
+        emailInput.oninput = () => {
+            if (!emailRegex.test(emailInput.value)) {
+                emailError.innerText = "Email phải dạng @gmail.com!";
+            } else emailError.innerText = "";
+        };
+
+        // SAVE
+        saveBtn.onclick = () => {
+
+            const fullname = fullnameInput.value.trim();
+            const dob = dobInput.value;
+            const address = addressInput.value.trim();
+            const phone = phoneInput.value.trim();
+            const email = emailInput.value.trim();
+
+            let valid = true;
+
+            if (!nameRegex.test(fullname)) {
+                nameError.innerText = "Họ tên không hợp lệ!";
+                valid = false;
+            }
+
+            if (address.length < 5) {
+                addressError.innerText = "Địa chỉ quá ngắn!";
+                valid = false;
+            }
+
+            if (!phoneRegex.test(phone)) {
+                phoneError.innerText = "SĐT không hợp lệ!";
+                valid = false;
+            }
+
+            if (!emailRegex.test(email)) {
+                emailError.innerText = "Email không hợp lệ!";
+                valid = false;
+            }
+
+            if (!valid) return;
+
+            const userData = {
+                username: currentUser,
+                fullname,
+                dob,
+                address,
+                phone,
+                email
+            };
+
+            localStorage.setItem("user_" + currentUser, JSON.stringify(userData));
+
+            // LOCK
+            fullnameInput.setAttribute("readonly", true);
+            dobInput.setAttribute("readonly", true);
+            addressInput.setAttribute("readonly", true);
+            phoneInput.setAttribute("readonly", true);
+            emailInput.setAttribute("readonly", true);
+            saveBtn.classList.add("d-none");
+            editBtn.classList.remove("d-none");
+            alert("Lưu thành công!");
+        };
+
+    </script>
+</body>
+
+</html>

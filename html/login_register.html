@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dang Ky / Dang Nhap</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/header.footer.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .content-wrapper {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-box {
+            position: relative;
+            width: 850px;
+            height: 550px;
+            background: #fff;
+            border-radius: 30px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .form-box {
+            position: absolute;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: #fff;
+            padding: 40px;
+            z-index: 1;
+            transition: 0.6s ease-in-out 1.2s;
+        }
+
+        .main-box.active .form-box {
+            right: 50%;
+        }
+
+        .form-box.register {
+            visibility: hidden;
+        }
+
+        .main-box.active .form-box.register {
+            visibility: visible;
+        }
+
+        .input-box {
+            position: relative;
+        }
+
+        .input-box i {
+            position: absolute;
+            right: 15px;
+            top: 40%;
+            transform: translateY(-50%);
+        }
+
+        .btn-custom {
+            background: linear-gradient(45deg, #041b29, #0ef);
+            color: white;
+            border-radius: 30px;
+        }
+
+        .social-icons a {
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            padding: 8px 12px;
+            color: #333;
+        }
+
+        .toggle-box {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .toggle-box::before {
+            content: '';
+            position: absolute;
+            left: -250%;
+            width: 300%;
+            height: 100%;
+            background: linear-gradient(45deg, #041b29, #0ef);
+            border-radius: 150px;
+            z-index: 2;
+            transition: 1.8s;
+        }
+
+        .main-box.active .toggle-box::before {
+            left: 50%;
+        }
+
+        .toggle-panel {
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            color: white;
+            z-index: 2;
+            transition: 0.6s;
+        }
+
+        .toggle-left {
+            left: 0;
+        }
+
+        .main-box.active .toggle-left {
+            left: -50%;
+        }
+
+        .toggle-right {
+            right: -50%;
+        }
+
+        .main-box.active .toggle-right {
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="custom-header sticky-top shadow-sm py-2 mb-4">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl navbar-dark">
+                <a class="navbar-brand fw-bold fs-2 me-4" href="../html/home.html">
+                    <span style="color: black; font-family: 'Dancing Script', cursive;">BookShop</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button">
+                                <i class="fa-solid fa-bars me-1"></i> <span>DANH MỤC</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">VĂN HỌC</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="menu-tieuthuyet.html">Tiểu thuyết</a></li>
+                                        <li><a class="dropdown-item" href="menu-truyenngan-tanvan.html">Truyện ngắn -
+                                                Tản văn</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">TÂM LÝ - KỸ NĂNG</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="menu-kynangsong.html">Kỹ năng sống</a></li>
+                                        <li><a class="dropdown-item" href="menu-tamly.html">Tâm lý học</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">NUÔI DẠY CON</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="menu-camnangchame.html">Cẩm nang cha mẹ</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="menu-giaoductre.html">Giáo dục trẻ</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">SÁCH THIẾU NHI</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="menu-manga-comic.html">Manga - Comic</a></li>
+                                        <li><a class="dropdown-item" href="menu-kienthucbachkhoa.html">Kiến thức bách
+                                                khoa</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">TIỂU SỬ - HỒI KÝ</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="menu-cauchuyencuocdoi.html">Câu chuyện cuộc
+                                                đời</a></li>
+                                        <li><a class="dropdown-item" href="menu-lichsu.html">Lịch Sử</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex mx-auto w-50 my-2 my-xl-0">
+                        <div class="input-group">
+                            <input class="form-control" type="search" placeholder="Thể loại, Sách, Tác giả..."
+                                aria-label="Search">
+                            <button class="btn btn-light" type="submit border">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </form>
+
+                    <div id="auth-section"
+                        class="d-flex align-items-center gap-3 ms-xl-4 text-white justify-content-center">
+                        <a href="../html/cart.html"
+                            class="btn btn-outline-light d-flex align-items-center gap-2 border-0 ">
+                            <span>Giỏ Hàng</span>
+                            <i class="fa-solid fa-cart-shopping fs-5"></i>
+                        </a>
+                        <a href="../html/login_register.html" id="user-link"
+                            class="btn btn-outline-light d-flex align-items-center gap-2 border-0">
+                            <span>Đăng Nhập</span>
+                            <i class="fa-solid fa-user fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="content-wrapper">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="main-box d-none d-md-block" id="container">
+                <div class="form-box login d-flex flex-column justify-content-center text-center">
+                    <form>
+                        <h2 class="mb-3">Đăng nhập</h2>
+
+                        <div class="input-box mb-3">
+                            <input id="login-user" type="text" class="form-control" placeholder="Tên đăng nhập">
+                            <i class="fa-solid fa-user"></i>
+
+                        </div>
+                        <div class="input-box mb-3">
+                            <input id="login-pass" type="password" class="form-control" placeholder="Mật khẩu">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+
+                        <div class="mb-3">
+                            <a href="#" class="small">Quên mật khẩu?</a>
+                        </div>
+
+                        <button class="btn btn-custom w-100 mb-3">Đăng Nhập</button>
+
+                        <p class="small">Hoặc đăng nhập với</p>
+
+                        <div class="d-flex justify-content-center gap-2 social-icons">
+                            <a href="#"><i class="fab fa-google"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </form>
+                </div>
+                <div class="form-box register d-flex flex-column justify-content-center text-center">
+                    <form>
+                        <h2 class="mb-3">Đăng ký</h2>
+
+                        <div class="input-box mb-3">
+                            <input id="reg-user" type="text" class="form-control" placeholder="Tên đăng nhập">
+                            <i class="fa-solid fa-user"></i>
+                            <span class="text-danger err-user"></span>
+                        </div>
+
+                        <div class="input-box mb-3">
+                            <input id="reg-email" type="email" class="form-control" placeholder="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span class="text-danger err-email"></span>
+                        </div>
+
+                        <div class="input-box mb-3">
+                            <input id="reg-pass" type="password" class="form-control" placeholder="Mật khẩu">
+                            <i class="fa-solid fa-lock"></i>
+                            <span class="text-danger err-pass"></span>
+                        </div>
+
+                        <div class="input-box mb-3">
+                            <input id="reg-confirm-pass" type="password" class="form-control"
+                                placeholder="Nhập lại mật khẩu">
+                            <i class="fa-solid fa-lock"></i>
+                            <span class="text-danger err-confirm"></span>
+                        </div>
+                        <button class="btn btn-custom w-100 mb-3">Đăng ký</button>
+
+                        <p class="small">Hoặc đăng ký với</p>
+
+                        <div class="d-flex justify-content-center gap-2 social-icons">
+                            <a href="#"><i class="fab fa-google"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </form>
+                </div>
+                <div class="toggle-box">
+                    <div
+                        class="toggle-panel toggle-left d-flex flex-column justify-content-center align-items-center text-center">
+                        <h2>Chào mừng!</h2>
+                        <p>Không có tài khoản?</p>
+                        <button class="btn btn-outline-light register-btn">Đăng ký</button>
+                    </div>
+                    <div
+                        class="toggle-panel toggle-right d-flex flex-column justify-content-center align-items-center text-center">
+                        <h2>Chào mừng trở lại!</h2>
+                        <p>Bạn đã có tải khoản?</p>
+                        <button class="btn btn-outline-light login-btn">Đăng Nhập</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container d-md-none mt-4">
+                <ul class="nav nav-tabs mb-3">
+                    <li class="nav-item w-50 text-center">
+                        <button class="nav-link active w-100" data-bs-toggle="tab" data-bs-target="#loginMobile">
+                            Đăng nhập
+                        </button>
+                    </li>
+                    <li class="nav-item w-50 text-center">
+                        <button class="nav-link w-100" data-bs-toggle="tab" data-bs-target="#registerMobile">
+                            Đăng ký
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="loginMobile">
+                        <form class="text-center">
+
+                            <h2 class="mb-3">Đăng nhập</h2>
+
+                            <div class="input-box mb-3">
+                                <input id="login-user-mobile" class="form-control" placeholder="Tên đăng nhập">
+                                <i class="fa-solid fa-user"></i>
+
+                            </div>
+
+                            <div class="input-box mb-3">
+                                <input id="login-pass-mobile" type="password" class="form-control"
+                                    placeholder="Mật khẩu">
+                                <i class="fa-solid fa-lock"></i>
+
+                            </div>
+
+                            <div class="mb-3">
+                                <a href="#" class="small">Quên mật khẩu?</a>
+                            </div>
+
+                            <button class="btn btn-custom w-100 mb-3">Đăng Nhập</button>
+
+                            <p class="small">Hoặc đăng nhập với</p>
+
+                            <div class="d-flex justify-content-center gap-2 social-icons">
+                                <a href="#"><i class="fab fa-google"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="registerMobile">
+                        <form class="text-center">
+
+                            <h2 class="mb-3">Đăng ký</h2>
+
+                            <div class="input-box mb-3">
+                                <input id="reg-user-mobile" class="form-control" placeholder="Tên đăng nhập">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="text-danger err-user"></span>
+                            </div>
+
+                            <div class="input-box mb-3">
+                                <input id="reg-email-mobile" class="form-control" placeholder="Email">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span class="text-danger err-email"></span>
+                            </div>
+
+                            <div class="input-box mb-3">
+                                <input id="reg-pass-mobile" type="password" class="form-control" placeholder="Mật khẩu">
+                                <i class="fa-solid fa-lock"></i>
+                                <span class="text-danger err-pass"></span>
+                            </div>
+
+                            <div class="input-box mb-3">
+                                <input id="reg-confirm-pass-mobile" type="password" class="form-control"
+                                    placeholder="Nhập lại mật khẩu">
+                                <i class="fa-solid fa-lock"></i>
+                                <span class="text-danger err-confirm"></span>
+                            </div>
+
+                            <button class="btn btn-custom w-100 mb-3">Đăng ký</button>
+
+                            <p class="small">Hoặc đăng ký với</p>
+
+                            <div class="d-flex justify-content-center gap-2 social-icons">
+                                <a href="#"><i class="fab fa-google"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center">
+        <div class="row">
+            <div class="col-md-4 d-flex flex-column col-sm-12">
+                <a class="navbar-brand fw-bold fs-2 me-4" href="../html/home.html">
+                    <span
+                        style="color: black; font-family: 'Dancing Script', cursive; font-size: 2.3em;">BookShop</span>
+                </a>
+                <i class="fs-5">
+                    "Mở cuốn sách, mở tương lai."
+                </i>
+                <div class="inf d-flex justify-content-center align-items-center gap-2 mt-3">
+                    <a href="#" class="text-decoration-none text-white fa-brands fa-facebook fs-3"></a>
+                    <a href="#" class="text-decoration-none text-white fa-brands fa-instagram fs-3"></a>
+                    <a href="#" class="text-decoration-none text-white fa-brands fa-youtube fs-3"></a>
+                    <a href="#" class="text-decoration-none text-white fa-brands fa-tiktok fs-3"></a>
+                </div>
+            </div>
+            <div class="col-md-7 mt-3">
+                <div class="row">
+                    <div class="col-md-4 mb-2">
+                        <h4 class="text-center text-md-start fw-bolder mb-3">Dịch vụ</h4>
+                        <div class="d-flex flex-column  align-items-center align-items-md-start">
+                            <a href="index.html" class="text-decoration-none text-white">Giới thiệu BookShop</a>
+                            <a href="#" class="text-decoration-none text-white">Điều khoản sử dụng</a>
+                            <a href="#" class="text-decoration-none text-white">Chính sách bảo mật</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <h4 class="text-center text-md-start fw-bolder mb-3">Hỗ trợ</h4>
+                        <div class="d-flex flex-column align-items-center align-items-md-start">
+                            <a href="#" class="text-decoration-none text-white">Chính sách đổi - trả - hoàn tiền</a>
+                            <a href="#" class="text-decoration-none text-white">Chính sách bảo hành</a>
+                            <a href="#" class="text-decoration-none text-white">Chính sách vận chuyển</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <h4 class="text-center text-md-start fw-bolder mb-3">Tài khoản</h4>
+                        <div class="d-flex flex-column align-items-center align-items-md-start">
+                            <a href="../html/user.html" class="text-decoration-none text-white">Thông tin tài khoản</a>
+                            <a href="../html/login_register.html" class="text-decoration-none text-white">Đăng nhập /
+                                Tạo tài khoản</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-none justify-content-between align-content-center mt-4 d-md-flex">
+                    <div class="col">
+                        <img src="../img/img-icon/vnp.png" alt="" srcset="" class="img-fluid logo-footer">
+                    </div>
+                    <div class="col">
+                        <img src="../img/img-icon/vt.png" alt="" srcset="" class="img-fluid logo-footer">
+                    </div>
+                    <div class="col">
+                        <img src="../img/img-icon/sp.png" alt="" srcset="" class="img-fluid logo-footer">
+                    </div>
+                    <div class="col">
+                        <img src="../img/img-icon/vp.png" alt="" srcset="" class="img-fluid logo-footer">
+                    </div>
+                    <div class="col">
+                        <img src="../img/img-icon/zp.png" alt="" srcset="" class="img-fluid logo-footer">
+                    </div>
+                    <div class="col">
+                        <img src="../img/img-icon/mm.png" alt="" srcset="" width="100px" class="img-fluid logo-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+        const container = document.getElementById('container');
+        const registerBtn = document.querySelector('.register-btn');
+        const loginBtn = document.querySelector('.login-btn');
+
+        registerBtn?.addEventListener('click', () => {
+            container.classList.add('active');
+        });
+
+        loginBtn?.addEventListener('click', () => {
+            container.classList.remove('active');
+        });
+
+
+        //dangky
+
+        const registerButtons = document.querySelectorAll('.register .btn-custom, #registerMobile .btn-custom');
+        function isRegisterValid(username, email, password, confirmPassword) {
+            if (
+                username === "" ||
+                email === "" ||
+                password === "" ||
+                confirmPassword === ""
+            ) return false;
+
+            if (!userRegex.test(username)) return false;
+            if (!emailRegex.test(email)) return false;
+            if (!passRegex.test(password)) return false;
+            if (password !== confirmPassword) return false;
+
+            return true;
+        }
+        registerButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                let username, email, password, confirmPassword;
+
+                if (window.innerWidth >= 768) {
+                    username = document.getElementById('reg-user').value;
+                    email = document.getElementById('reg-email').value;
+                    password = document.getElementById('reg-pass').value;
+                    confirmPassword = document.getElementById('reg-confirm-pass').value;
+                } else {
+                    username = document.getElementById('reg-user-mobile').value;
+                    email = document.getElementById('reg-email-mobile').value;
+                    password = document.getElementById('reg-pass-mobile').value;
+                    confirmPassword = document.getElementById('reg-confirm-pass-mobile').value;
+                }
+                if (!isRegisterValid(username, email, password, confirmPassword)) {
+                    alert("Vui lòng kiểm tra lại thông tin");
+                    return;
+                }
+
+                const user = {
+                    username,
+                    email,
+                    password
+                };
+
+                localStorage.setItem('userData', JSON.stringify(user));
+
+                alert("Đăng ký thành công!");
+                container?.classList.remove('active');
+            });
+        });
+
+        // dangnhap
+        const loginButtons = document.querySelectorAll('.login .btn-custom, #loginMobile .btn-custom');
+
+        loginButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                let userInp, passInp;
+
+                if (window.innerWidth >= 768) {
+                    // PC
+                    userInp = document.getElementById('login-user').value;
+                    passInp = document.getElementById('login-pass').value;
+                } else {
+                    // MOBILE
+                    userInp = document.getElementById('login-user-mobile').value;
+                    passInp = document.getElementById('login-pass-mobile').value;
+                }
+
+                const storedData = localStorage.getItem('userData');
+
+                if (storedData) {
+                    const userData = JSON.parse(storedData);
+                    if (userInp === "" || passInp === "") {
+                        alert("Vui lòng điền đầy đủ thông tin!");
+
+                    }
+                    else if (userInp === userData.username && passInp === userData.password) {
+                        alert("Đăng nhập thành công! Chào mừng " + userData.username);
+
+                        //chuyen den home
+                        localStorage.setItem('currentUser', userData.username);
+
+                        window.location.href = "home.html";
+
+
+                    } else if ((userInp === userData.username && passInp !== userData.password) || (userInp !== userData.username && passInp === userData.password)) {
+
+                        alert("Sai tên đăng nhập hoặc mật khẩu!");
+                    } else {
+                        alert("Tài khoản không tồn tại! Vui lòng đăng ký.");
+                    }
+                }
+            });
+        }
+
+        );
+
+    </script>
+    <script>
+        const users = document.querySelectorAll('#reg-user, #reg-user-mobile');
+        const emails = document.querySelectorAll('#reg-email, #reg-email-mobile');
+        const passwords = document.querySelectorAll('#reg-pass, #reg-pass-mobile');
+        const confirms = document.querySelectorAll('#reg-confirm-pass, #reg-confirm-pass-mobile');
+        const userRegex = /^[a-z0-9]{3,}$/;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const passRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/;
+
+        // USERNAME
+        users.forEach(input => {
+            input.addEventListener('blur', () => {
+                const err = input.parentElement.querySelector('.err-user');
+
+                if (input.value === "") {
+                    err.innerText = "UserName không được để trống";
+                } else if (!userRegex.test(input.value)) {
+                    err.innerText = "UserName không chứa khoảng trắng/ký tự đặc biệt/ chữ in hoa và tối thiểu 3 ký tự";
+                } else {
+                    err.innerText = "";
+                }
+            });
+        });
+
+        // EMAIL
+        emails.forEach(input => {
+            input.addEventListener('blur', () => {
+                const err = input.parentElement.querySelector('.err-email');
+
+                if (input.value === "") {
+                    err.innerText = "Email không được để trống";
+                } else if (!emailRegex.test(input.value)) {
+                    err.innerText = "Email không hợp lệ";
+                } else {
+                    err.innerText = "";
+                }
+            });
+        });
+
+        // PASSWORD
+        passwords.forEach(input => {
+            input.addEventListener('blur', () => {
+                const err = input.parentElement.querySelector('.err-pass');
+
+                if (input.value === "") {
+                    err.innerText = "Mật khẩu không được để trống";
+                } else if (!passRegex.test(input.value)) {
+                    err.innerText = "Ít nhất 8 ký tự, 1 chữ hoa, 1 số, 1 ký tự đặc biệt";
+                } else {
+                    err.innerText = "";
+                }
+            });
+        });
+
+        // CONFIRM PASSWORD
+        confirms.forEach(input => {
+            input.addEventListener('blur', () => {
+                const err = input.parentElement.querySelector('.err-confirm');
+                const pass = input.closest('form')
+                    .querySelector('#reg-pass, #reg-pass-mobile').value;
+
+                if (input.value === "") {
+                    err.innerText = "Không được để trống";
+                } else if (input.value !== pass) {
+                    err.innerText = "Mật khẩu không khớp";
+                } else {
+                    err.innerText = "";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
