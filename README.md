@@ -4,7 +4,7 @@
 
 * **Ngày đăng ký:** 30/12/2025
 * **Ngày nộp:** 10/05/2026
-* **Giáo viên hướng dẫn:** Đặng Thị Thu Hà
+* **Giáo viên hướng dẫn:** ThS Đặng Thị Thu Hà
 * **Đơn vị thực hiện:** Nhóm 6
 
 ###  Danh sách thành viên nhóm
